@@ -1,0 +1,42 @@
+We performed a series of tests to compute the number of Comparisons and Moves using the swapSort algorithm.
+
+For each value of n, we computed the total average number of Comparisons and Moves over 10 tests, for each type (Random and Almost Sorted).
+The Main method has been modified to output directly the averages over a desired number of tests that the user would enter through the keyboard
+
+We also computed the ratio of the total number of moves and comparisons over the quantities n^2 and nlog n;
+log here corresponds to log 10
+
+The results of the experiments are presented in the following table.
+
+
+Randomly Sorted					                                            	Almost Sorted	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------			
+n	Comparisons	Moves	    	TOTAL	    	TOTAL / n^2	    TOTAL / nlogn	Comparisons	Moves	TOTAL	    	TOTAL / n^2	    TOTAL / nlogn
+1000	499500	    	748890	    	1248390	    	1.24839	            416.13	        499500	    	1483	500983	    	0.500983	    166.9943333
+2000	1999000	    	2962341	    	4961341	    	1.24033525	    751.4837803	    	1999000	    	2925	2001925	    	0.50048125	    303.2273264
+4000	7998000	    	11707166	19705166	1.231572875	    1367.63172	    	7998000	    	5720	8003720	    	0.5002325	    555.4960231
+8000	31996000	46010660	78006660	1.218854063	    2498.2341	    	31996000	11405	32007405	0.500115703	    1025.066201
+16000	127992000	176591773	304583773	1.189780363	    4528.054835	    	127992000	21869	128013869	0.500054176	    1903.101445
+32000	511984000	656725728	1168709728	1.141318094	    8106.762078	    	511984000	40196	512024196	0.500023629	    3551.658924
+64000	2047968000	2272551239	4320519239	1.054814267	    14046.10595	    	2047968000	68505	2048036505	0.500008912	    6658.213085
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    CONCLUSION:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. RANDOMLY SORTED ARRAY:
+-------------------------
+The ratio TOTAL / (n^2) seems to converge (decrease) as n increases, and is roughly between 1.00 and 1.25 for n <= 64000;
+The ratio TOTAL / (nlogn) seems to increase as n increases, and is roughly between 400 and 15000 for n <= 64000;
+
+Thus, the time efficiency of the swapSort for RANDOMLY SORTED ARRAY is O(n^2)
+
+2. ALMOST SORTED ARRAY:
+-----------------------
+The ratio TOTAL / (n^2) seems to converge (decrease) as n increases, and is roughly between 0.5 and 0.51 for n <= 64000;
+The ratio TOTAL / (nlogn) seems to increase as n increases, and is roughly between 150 and 7000 for n <= 64000;
+
+Thus, the time efficiency of the swapSort for ALMOST SORTED ARRAY is O(n^2)
+
+
+

@@ -1,0 +1,31 @@
+(a) class Oven extends Kitchen
+No, Doesn't make sense, because an oven is not a particular type of kitchen. 
+A kitchen is a room, but an oven is an appliance.
+
+(b) class Guitar extends Instrument
+Yes, it makes sense. A guitar is a particular type of instrument.
+
+(c) class Person extends Employee
+No, Doesn't make sense, because an employee is a particular type of person, not the other way around.
+
+(d) class Ferrari extends Engine
+No, Doesn't make sense, because Ferrari is a car (or car brand) which is not an engine.
+
+(e) class FriedEgg extends Food
+Yes, it makes sense, because FriedEgg is a particular type of Food
+
+(f) class Beagle extends Pet
+No, it doesn't make sense, because a Beagle is a food, while a Pet is an animal.
+Their natures are completely different.
+
+(g) class Container extends Jar
+No, it doesn't make sense, because a Container is not necessarily a Jar, but the other way around.
+
+(h) class Beverage extends Martini
+No, id doesn't make sense, because a Beverage is not necessarily a Martini
+
+(i) class Metal extends Titanium
+No, it doesn't make sense, because a Metal is not necessarily a Titanium.
+
+(j) class RollingStones extends RockBand
+Yes, it makes sense, because RollingStones are a particular "type" of RockBand.
